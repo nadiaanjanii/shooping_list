@@ -42,7 +42,7 @@ class _GroceryListState extends State<GroceryList> {
       child: Text("No Item Added yet."),
     );
 
-    if (_groceryItems.isEmpty) {
+    if (_groceryItems.isNotEmpty) {
       content = ListView.builder(
         itemCount: _groceryItems.length,
         itemBuilder: (context, index) => Dismissible(
